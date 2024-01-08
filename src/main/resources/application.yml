@@ -1,20 +1,17 @@
 server:
   port: 9007
 
-#---------database ----------------
+
+
+#===============database======================
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/user-info
     username: postgres
     password: postgres
-
-
-## Hibernate Properties
-# The SQL dialect makes Hibernate generate better SQL for the chosen database
-
   jpa:
+    show-sql: true
     hibernate:
       ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
