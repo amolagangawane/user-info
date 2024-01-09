@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/")
-    public String sayHello(HttpServletRequest request){
+    public String sayHello(){
 
         return "welcome!";
     }
